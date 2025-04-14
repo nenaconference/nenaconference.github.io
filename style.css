@@ -9,8 +9,7 @@ body {
     margin: 0;
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-color: var(--primary-color);
-    padding: 40px;
-    width: 90vw; /* Full width of the page */
+    width: 100vw;
     font-weight: 300;
   }
 
@@ -19,7 +18,7 @@ body {
     text-decoration: none;
   }
   main a:hover{
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   header {
@@ -60,9 +59,6 @@ body {
     background-color: #ffffff;
   }
 
-  h2 {
-    margin-top: 1.5rem;
-  }
 
   h1,h2, h3 {
     font-weight: 500;
@@ -81,11 +77,7 @@ body {
     color: rgb(171, 171, 171);
     text-decoration: none;
   }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
+ 
   
   body {
     display: flex;
@@ -194,8 +186,6 @@ table {
     display: flex;                /* Use Flexbox */
     max-width: 1200px;             /* Max width of the section */
     margin: 0 auto;                /* Center horizontally */
-    padding: 20px;
-    padding-left: 0;
     box-sizing: border-box;
     gap: 20px;                     /* Space between header and paragraphs */
   }
@@ -225,10 +215,57 @@ table {
 /* Main content box */
 .page-container {
     max-width: 1200px;
-    width: 90vw; /* Full width of the page */
-    margin: 0 auto;
+    width: 85vw; /* Full width of the page */
+    margin: 20px auto;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
     padding: 20px 40px;
     box-sizing: border-box;
   }
+
+  @media (max-width: 700px) {
+    .page-container {
+      padding: 20px;
+      margin: 10px;
+      width: auto;
+    }
+    .announcement {
+      margin: 10%;
+      padding: 1em;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .organizer-list {
+      grid-template-columns: 1fr !important;
+    }
+  
+    .left-header {
+      display: block;
+    }
+  
+    .left-header h2 {
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 1rem;
+      font-weight: 200;
+    }
+    .container, main {
+      padding: 0;
+    }
+    .page-container {
+      padding: 10px;
+    }
+
+    .branding{
+      gap: 0;
+    }
+  }
+/*
+  * {
+    outline: 1px solid red;
+  }*/
