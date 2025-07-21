@@ -126,6 +126,9 @@ footer a{
 .announcement h2{
   margin: 1rem 0rem;
 }
+.announcement a:hover{
+  border-bottom: 1px solid var(--primary-color);
+}
 .faq h2 {
   color: #9caf88;
   text-align: center
