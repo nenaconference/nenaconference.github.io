@@ -106,7 +106,9 @@ footer a{
   align-items: center;
   gap: 1rem;
 }
-
+.branding h1{
+  margin-bottom: 0.5em;
+}
 .logo {
   height: 50px;
   width: auto;
@@ -115,7 +117,7 @@ footer a{
 .announcement{
   color: var(--primary-color);
   background-color: #ffffff;
-  padding: 0.5em 5em;
+  /*padding: 0.5em 5em;*/
   text-align: center;
   margin: 2em 20%;
   border-top: 2px solid var(--primary-color);  /* Custom color for top border */
@@ -127,7 +129,7 @@ footer a{
   margin: 1rem 0rem;
 }
 .announcement a:hover{
-  border-bottom: 1px solid var(--primary-color);
+  background-color: #eff1e7;
 }
 .faq h2 {
   color: #9caf88;
