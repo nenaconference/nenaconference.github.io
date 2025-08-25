@@ -2,6 +2,7 @@
   --primary-color: #9caf88;
   --secondary-color: #9caf88;
   --off-white: #EFE7DD;
+  --alarm-color: #b33c3c;
 }
 
 /* style.css */
@@ -131,6 +132,22 @@ footer a{
 .announcement a:hover{
   background-color: #eff1e7;
 }
+
+.warning{
+  color: var(--alarm-color);
+  background-color: #f1e7e7;
+  border: 2px solid var(--alarm-color);  /* Custom color for top border */
+}
+.warning a:hover{
+  background-color: #dbc7c7;
+}
+.warning h2{
+  color: var(--alarm-color);
+}
+.warning a{
+  color: var(--alarm-color);
+}
+
 .faq h2 {
   color: #9caf88;
   text-align: center
@@ -298,3 +315,24 @@ table {
   * {
     outline: 1px solid red;
   }*/
+  section-with-image {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 300px; /* Adjust as needed */
+  padding: 0;
+}
+
+.section-content {
+  width: 50%;
+  background: #fff; /* Optional: for contrast */
+  box-sizing: border-box;
+}
+
+.section-image {
+  width: 35%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px; /* Consistent with section min-height */
+}
