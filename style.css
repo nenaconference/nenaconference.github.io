@@ -357,6 +357,14 @@ table {
 
 @media (max-width: 600px) {
 
+  header h1{
+    font-size: 1.1rem;
+  }
+  
+  .organizers ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .section-content,
   .section-image {
     width: 100%;
