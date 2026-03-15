@@ -5,12 +5,15 @@
   --alarm-color: #b33c3c;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* style.css */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: var(--secondary-color);
-  width: 100vw;
   font-weight: 300;
   display: flex;
   flex-direction: column;
@@ -57,7 +60,7 @@ nav a:hover {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0rem;
   background-color: #ffffff;
   flex: 1; /* Pushes footer to the bottom */
 }
@@ -106,6 +109,7 @@ footer a{
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap:wrap;
 }
 .branding h1{
   margin-bottom: 0.5em;
@@ -120,7 +124,8 @@ footer a{
   background-color: #ffffff;
   /*padding: 0.5em 5em;*/
   text-align: center;
-  margin: 2em 20%;
+  margin: 2em  auto;
+  max-width: 700px;
   border-top: 2px solid var(--primary-color);  /* Custom color for top border */
   border-bottom: 2px solid var(--primary-color); /* Custom color for bottom border */
   border-left: none; /* Remove left border */
@@ -153,9 +158,25 @@ footer a{
   text-align: center
 }
 
+/* Section Styling */
+.speakers {
+  width: 100%;
+  margin: 0 auto; /* Center horizontally */
+  box-sizing: border-box;
+}
+
+.speakers h1{
+  color: var(--primary-color);
+  font-size: 30pt;
+  font-weight: 200;
+  text-align: center; 
+  padding: 10pt 0pt;
+}
+
 /* Table styling */
 table {
-  width: 60%;
+  width: 100%;
+  max-width: 450px;
   border-collapse: collapse;
   margin: 20px 0px;
 }
@@ -311,12 +332,10 @@ table {
   margin-right: auto;
 }
 
-/*
-  * {
-    outline: 1px solid red;
-  }*/
+
   section-with-image {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
   min-height: 300px; /* Adjust as needed */
@@ -324,15 +343,28 @@ table {
 }
 
 .section-content {
-  width: 50%;
+  width: 60%;
   background: #fff; /* Optional: for contrast */
   box-sizing: border-box;
 }
 
 .section-image {
-  width: 35%;
+  width: 40%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 300px; /* Consistent with section min-height */
+}
+
+@media (max-width: 700px) {
+
+  .section-content,
+  .section-image {
+    width: 100%;
+  }
+
+  .section-image{
+    height: 200px;
+  }
+
 }
