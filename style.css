@@ -356,7 +356,7 @@ table {
   min-height: 300px; /* Consistent with section min-height */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
   .section-content,
   .section-image {
