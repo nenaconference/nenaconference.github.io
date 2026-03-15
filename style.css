@@ -106,7 +106,6 @@ footer a{
 }
 
 .branding {
-  color: #fa7e70;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -115,6 +114,7 @@ footer a{
 .branding h1{
   font-size: 30pt;
   margin-bottom: 0.5em;
+  color: #fa7e70;
 }
 .logo {
   height: 50px;
