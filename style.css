@@ -241,7 +241,7 @@ footer a{
 /* Table styling */
 table {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   border-collapse: collapse;
   margin: 20px 0px;
 }
