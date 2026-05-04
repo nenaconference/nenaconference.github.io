@@ -137,7 +137,7 @@ footer a{
   margin: 1rem 0rem;
 }
 .announcement a:hover{
-  background-color: #eff1e7;
+  background-color: var(--secondary-color);
 }
 
 .warning{
